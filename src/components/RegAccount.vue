@@ -75,4 +75,10 @@
   .popup button {
     margin-right: 15px;
   }
+  
+  @media (max-width: 378px) {
+    .popup label {
+      width: 280px;
+    }
+  }
   </style>
