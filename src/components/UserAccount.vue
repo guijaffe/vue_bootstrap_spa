@@ -75,4 +75,21 @@ export default {
 .userAccount li {
   width: 110%;
 }
+
+@media (max-width: 876px) and (min-width: 550px) {
+  .userAccount li {
+  width: 350px;
+}
+}
+
+@media (max-width: 550px) {
+  .userAccount {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .userAccount li {
+  width: 250px;
+}
+}
 </style>
