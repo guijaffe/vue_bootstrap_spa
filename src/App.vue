@@ -202,3 +202,11 @@ export default {
   },
 };
 </script>
+
+<!-- для попапа -->
+
+<style>
+body { 
+  overflow: hidden; 
+  }
+</style>
