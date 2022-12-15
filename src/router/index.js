@@ -15,6 +15,16 @@ const routes = [
     path: '/register',
     name: 'Register',
     component: () => import( '../views/SignUp.vue')
+  },
+  {
+    path: '/confirm',
+    name: 'Confirm',
+    component: () => import( '../views/Confirm.vue')
+  },
+  {
+    path: '/authorisation',
+    name: 'ConfirmAuthor',
+    component: () => import( '../views/ConfirmAuthor.vue')
   }
 ]
 

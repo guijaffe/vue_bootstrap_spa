@@ -3,7 +3,7 @@
  <header class="p-4 text-white shadow" style="background-color: #155FB4">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <a href="/vue_bootstrap_spa/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
           <img src="https://stc-spb.ru/local/templates/stc/img/header/header_logo.svg" alt="логотип">
         </a>
   <!-- Тут менюшка максимально простая -->
@@ -31,7 +31,7 @@
     Связал с помощью v-model с data, так же применил функцию trim она обрезает пробелы слева и справа
   -->
 <main>
-  <form class="col-sm-6 mt-5 mx-auto px-4" novalidate>
+  <form class="col-sm-6 mt-5 mx-auto px-4">
     <div class="mb-3">
  <div v-show="step === 1" class="step">
   <div class="mb-3">
@@ -127,9 +127,11 @@ export default {
     registerUser() {
       this.v$.$validate()
       if (!this.v$.$error) {
-        alert('Регистрация прошла успешно'); 
+        alert('Регистрация прошла успешно');
+        this.$router.push('/confirm/');
       } else {
-        alert('Ошибка регистрации')
+        alert('Ошибка регистрации');
+        this.$router.push('/register/');
       }
     }
   },
